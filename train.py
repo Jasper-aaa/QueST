@@ -72,8 +72,8 @@ def main(cfg):
             wandb_id = state_dict['wandb_id']
     else:
         print('starting from scratch')
-    import pdb
-    pdb.set_trace()
+    # import pdb
+    # pdb.set_trace()
     cfg.task.dataset["n_demos"] = train_cfg.num_shot
     dataset = instantiate(cfg.task.dataset)
     model.preprocess_dataset(dataset, use_tqdm=train_cfg.use_tqdm)
