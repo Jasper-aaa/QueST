@@ -17,6 +17,8 @@ logging_folder: training
 
 checkpoint_path: null
 
+task:
+  demos_per_env: null
 
 train_dataloader:
   _target_: torch.utils.data.DataLoader
