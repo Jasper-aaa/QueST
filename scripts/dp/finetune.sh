@@ -5,7 +5,7 @@ do
     echo "Running with demos_per_env=$shot"
     python train.py --config-name=train_fewshot.yaml \
         task=libero_long_fewshot \
-        task.demos_per_env=$shot \
+        task.dataset.demos_per_env=$shot \
         algo=diffusion_policy \
         exp_name=dp-libero-long-${shot}-shot \
         variant_name=block_32 \
