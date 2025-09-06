@@ -6,7 +6,7 @@ stage: 2 # 0 - pretrain autoencoder, 1 - train multitask, 2 - finetune multitask
 
 training:
   n_epochs: 100 # 100 is best for libero, 200 for metaworld
-
+  num_shot: 1
 rollout:
   interval: 25
   rollouts_per_env: 5
