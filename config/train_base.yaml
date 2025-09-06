@@ -5,7 +5,7 @@ defaults:
 
 # set the path to your data and experiments directories
 output_prefix: ./experiments
-data_prefix: ./data
+data_prefix: /home/public_data/
 
 exp_name: debug # 
 variant_name: null
@@ -33,7 +33,7 @@ train_dataloader:
 training:
   n_epochs: 100
   grad_clip: 100.
-  save_interval: 10
+  save_interval: 50
   log_interval: 100
   use_amp: false
   use_tqdm: true
@@ -48,7 +48,7 @@ training:
   resume_path: ""
 
 rollout:
-  enabled: true
+  enabled: false
   interval: 10
   rollouts_per_env: 1
   max_episode_length: ${task.horizon}

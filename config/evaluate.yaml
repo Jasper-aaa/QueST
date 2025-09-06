@@ -25,7 +25,7 @@ seed: 10000
 device: cuda:0
 stage: 1 # 0 - pretrain autoencoder, 1 - train multitask, 2 - finetune multitask
 output_prefix: ./experiments
-data_prefix: ./data
+data_prefix: /home/public_data/
 make_unique_experiment_dir: false
 
 checkpoint_path: null
